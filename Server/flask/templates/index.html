@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>{{ title }}</title>
+    </head>
+    <body>
+        <!-- Have a dynamic title for if more pages are added -->
+        <h1>{{ title }}</h1>
+        <!-- Create a for loop which will load in the images from the sent list -->
+        {% for image in images %}
+            <table>
+                <td>
+                    <tr>
+                        <img src="{{ url_for('static', filename='images/' + image) }}" width="500px" height="300px">
+                    </tr>
+                    <tr>
+                        {{ image }}
+                    </tr>
+                </td>
+            </table>
+        {% endfor %}
+    </body>
+</html>

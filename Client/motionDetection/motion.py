@@ -1,3 +1,12 @@
+# File Name: motion.py (Client Portion)
+# Class: WCM555
+# Date: 2020-04-10
+# Author: Colin Robbins
+# Partners: Xiang Zhang, Nimalan
+# Purpose: To detect the motion, take a photo and initialize the
+#          sendPhotos.py script to SCP the images to the Server
+#          portion. 
+
 # import modules 
 import RPi.GPIO as GPIO
 from picamera import PiCamera
